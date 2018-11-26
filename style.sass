@@ -139,7 +139,7 @@ $font_regular: 'Roboto', sans-serif
 
 
 .creativity_is_important
-  height: 420px
+  height: 418px
   background: #fbfbfb
 
   text-align: center
@@ -217,25 +217,89 @@ $font_regular: 'Roboto', sans-serif
   height: 1040px
   text-align: center
   & h1
-    margin: 67px auto
+    margin: 69px auto 66px
     font-family: $font
     color: #fa6c65
     font-weight: 700
     text-transform: uppercase
-    letter-spacing: 1px
+    letter-spacing: 2px
     & .dimmed
       color: #848484
       font-family: 'Roboto Slab', serif
       font-size: 18px
       font-weight: 300
+      letter-spacing: 0
       text-transform: lowercase
-  .filtered_items
+      position: relative
+      left: 19px
+    & .space_between
+      margin: 0 0 0 -11px
+    & .main_title
+      position: relative
+      right: 21px
+  .filters ul
+    list-style: url('img/portfolio_list-style_inactive.png')
+    text-transform: uppercase
+    & a
+      font-family: $font
+      font-weight: 700
+      color: #616161
+      text-decoration: none
+      font-size: 14px
+    & li
+      float: left
+      margin: 0 44px 0 0
+      &:last-child
+        margin: 0
+    & li.ui-tabs-active a
+      color: #fa6c65
+    & li.ui-tabs-active
+      list-style: url('img/portfolio_list-style_active.png')
+  .filters
+    height: 20px
+    width: 530px
     margin: 0 auto
+  .filtered_items
+    margin: 24px auto
     max-width: 1313px
     & .filter_row
 
       & img
         margin-right: 6px
         margin-bottom: 7px
+        cursor: pointer
         &:last-child
           margin-right: 0
+
+
+
+.out_latest_blog
+  height: 702px
+  background: #fbfbfb
+  border-top: 1px solid #e9e9e9
+  text-align: center
+  & h1
+    color: #fa6c65
+    font-family: $font
+    font-weight: 700
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 1px
+    position: relative
+    top: 66px
+  & .description
+    font-family: $font_regular
+    font-weight: 400
+    color: #7f7f7f
+    font-size: 15px
+    width: 710px
+    margin: 0 auto
+    letter-spacing: 0.009em
+    position: relative
+    top: 90px
+    line-height: 1.6
+
+
+.footer
+  height: 463px
+  background: #303538
